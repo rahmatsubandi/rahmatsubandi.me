@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://rahmatsubandi.me/blog</loc>
+  </url>
+
+  <url>
+    <loc>https://rahmatsubandi.me/hello</loc>
+  </url>
+
+  <url>
+    <loc>https://rahmatsubandi.me</loc>
+  </url>
+
+  <url>
+    <loc>https://rahmatsubandi.me/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://rahmatsubandi.me/blog/basic-express-js</loc>
+  </url>
+</urlset>
