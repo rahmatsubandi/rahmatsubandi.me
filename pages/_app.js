@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
     <Chakra cookies={pageProps.cookies}>
       <ColorModeProvider
         options={{
-          useSystemColorMode: false,
+          useSystemColorMode: true,
         }}
       >
         <MDXProvider components={MDXComponents}>
