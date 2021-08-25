@@ -254,9 +254,14 @@ export default function Index() {
             </Heading>
 
             <BlogPost
-              title="Basic Express JS"
-              summary="Short learning and understand the basics around Next JS"
-              slug="basic-express-js"
+              title="Speed up programming language writing with emmet"
+              summary="Emmet functions to speed up writing our programming languages, such as Java Script, PHP, and many more, even HTML and CSS can too."
+              slug="emmet-syntax"
+            />
+            <BlogPost
+              title="MySQL CLI Cheatsheet"
+              summary="Cheatsheet MySql CLI command"
+              slug="mysql-cheetsheet"
             />
 
             <Divider mb={12} mt={16} w="90%" alignSelf="center" />
