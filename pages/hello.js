@@ -13,12 +13,16 @@ import fetcher from '../lib/fetcher'
 import SocialLink from '../components/SocialLink'
 import Container from '../components/Container'
 import { CodeIcon } from '../components/CustomIcons'
-import {
-    FiGithub,
-    FiInstagram,
-    FiYoutube,
-    FiLinkedin,
-} from "react-icons/fi";
+import { 
+    FaLinkedin,
+    FaGithub,
+    FaGitlab,
+    FaYoutube,
+    FaMedium,
+    FaInstagram,
+    FaFacebook,
+    FaTumblr
+} from 'react-icons/fa'
 
 const url = 'https://rahmatsubandi.me/hello'
 const titleSEO = 'Hello – Rahmat Subandi'
@@ -69,11 +73,15 @@ const Hello = () => {
                             Hello 👋, I'm Rahmat Subandi
                         </Heading>
                         <Text alignSelf="center" maxWidth="450px" textAlign="center" mb={4}>You can call me Rahmat, i'm a developer, writer, creator, and student. Use the links below to learn more.</Text>
-                        <SocialLink name="View my apps opensource" href="https://github.com/rahmatsubandi?tab=repositories" icon={FiGithub} />
-                        <SocialLink name="View my videos" href="https://www.youtube.com/channel/UCHXxNuytKUbfsYjRS357gtw" icon={FiYoutube} />
-                        <SocialLink name="Connect with me on Instagram" href="https://instagram.com/rhmtin" icon={FiInstagram} />
-                        <SocialLink name="Connect with me on Linkedin" href="https://www.linkedin.com/in/rahmat-subandi-7238391b4/" icon={FiLinkedin} />
-                        <SocialLink name="Back to my website!" href="/" icon={CodeIcon} />
+                        <SocialLink name="Visit to my website!" href="/" icon={CodeIcon} />
+                        <SocialLink name="Connect with me on Linkedin" href="https://www.linkedin.com/in/rahmat-subandi-7238391b4/" icon={FaLinkedin} />
+                        <SocialLink name="View my repository in GitHub" href="https://github.com/rahmatsubandi?tab=repositories" icon={FaGithub} />
+                        <SocialLink name="View my repository in GitLab" href="https://gitlab.com/rahmatsubandi" icon={FaGitlab} />
+                        <SocialLink name="View my Medium" href="https://medium.com/@rhmtin12" icon={FaMedium} />
+                        <SocialLink name="View my Instagram" href="https://instagram.com/rhmtin" icon={FaInstagram} />
+                        <SocialLink name="View my Facebook" href="https://www.facebook.com/subandi12" icon={FaFacebook} />
+                        <SocialLink name="Read my Rhymes" href="https://brontoosaurus.tumblr.com/" icon={FaTumblr} />
+                        <SocialLink name="Watch my Youtube" href="https://www.youtube.com/channel/UCHXxNuytKUbfsYjRS357gtw" icon={FaYoutube} />
                     </Flex>
                 </Stack>
             </Container>
