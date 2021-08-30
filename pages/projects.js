@@ -245,7 +245,7 @@ const Projects = () => {
               color={iconColor[colorMode]}
             >
               Sopel Teteh is a point of sales Website for selling Grilled
-              Sausage, Otak-Otak, Cornnet, and other things. Sopel Teteh is my
+              Sausage, Grilled fish, Cornnet, and other things. Sopel Teteh is my
               fourth project in real life. Sopel Teteh was created with{" "}
               <Code>PHP</Code> language using <Code>Laravel</Code> framework
               version <Badge>8.29.0</Badge>.
