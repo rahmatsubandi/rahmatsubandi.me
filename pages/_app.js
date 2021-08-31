@@ -21,6 +21,16 @@ const GlobalStyle = ({ children }) => {
             min-width: 356px;
             scroll-behavior: smooth;
           }
+          ::selection {
+            // jika darkmode warna merah jika lightmode hijau
+            background: ${colorMode === 'light' ? '#2F855A' : '#68D391'};
+            color: white;
+          }
+          ::-moz-selection {
+            // jika darkmode warna merah jika lightmode hijau
+            background: ${colorMode === 'light' ? '#2F855A' : '#68D391'};
+            color: white;
+          }
           #__next {
             display: flex;
             flex-direction: column;

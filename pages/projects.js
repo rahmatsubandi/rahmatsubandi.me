@@ -67,6 +67,7 @@ const Projects = () => {
         as="div"
         bgGradient="linear(to-r, blue.600, blue.400)"
         position="sticky"
+        transition="all 200ms linear"
         top={0}
         zIndex={100}
         w={`${width}%`}

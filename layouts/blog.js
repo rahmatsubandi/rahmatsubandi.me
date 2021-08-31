@@ -50,6 +50,7 @@ export default function BlogLayout({ children, frontMatter }) {
         as="div"
         bgGradient="linear(to-r, red.100, orange.200, yellow.300, green.400, teal.500, blue.600, cyan.700, purple.800, pink.900)"
         position="sticky"
+        transition="all 200ms linear"
         top={0}
         zIndex={100}
         w={`${width}%`}

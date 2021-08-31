@@ -64,6 +64,7 @@ export default function Index() {
         as="div"
         bgGradient="linear(to-r, blue.600, blue.400, green.400, green.600)"
         position="sticky"
+        transition="all 200ms linear"
         top={0}
         zIndex={100}
         w={`${width}%`}
