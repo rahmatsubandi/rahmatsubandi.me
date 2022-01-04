@@ -246,8 +246,8 @@ const Projects = () => {
               color={iconColor[colorMode]}
             >
               Sopel Teteh is a point of sales Website for selling Grilled
-              Sausage, Grilled fish, Cornnet, and other things. Sopel Teteh is my
-              fourth project in real life. Sopel Teteh was created with{" "}
+              Sausage, Grilled fish, Cornnet, and other things. Sopel Teteh is
+              my fourth project in real life. Sopel Teteh was created with{" "}
               <Code>PHP</Code> language using <Code>Laravel</Code> framework
               version <Badge>8.29.0</Badge>.
             </FeaturedProjectCard>
@@ -267,6 +267,80 @@ const Projects = () => {
               features. This project was created in <Code>PHP</Code> which of
               course uses the <Code>Laravel</Code> framework version
               <Badge>7.25.0</Badge>.
+            </FeaturedProjectCard>
+
+            <FeaturedProjectCard
+              title="Karta Bhumi Nusanntara"
+              href="https://karta-bhumi.co.id/"
+              src="/images/featuredproject/kartabhumi.png"
+              alt="Image of karta bhumi nusantara"
+              color={iconColor[colorMode]}
+            >
+              Karta Bhumi Nusantara is a company profile website that is engaged
+              in air technology. I created this website using{" "}
+              <Code>CMS Wordpress</Code> version <Badge>5.8.2</Badge>.
+            </FeaturedProjectCard>
+
+            <FeaturedProjectCard
+              title="Sinar Lentera Energi"
+              href="https://sinarlenteraenergi.com/"
+              src="/images/featuredproject/sinarlenteraenergi.png"
+              alt="Image of sinar lentera energi"
+              color={iconColor[colorMode]}
+            >
+              Sinar Lentera Energi is a company profile website that is engaged
+              in tool sales for industry. I created this website using{" "}
+              <Code>CMS Wordpress</Code> version <Badge>5.8.2</Badge>.
+            </FeaturedProjectCard>
+
+            <FeaturedProjectCard
+              title="Jawara Lobster"
+              href="https://jawaralobster.co.id/"
+              src="/images/featuredproject/jawaralobster.png"
+              alt="Image of jawara lobster"
+              color={iconColor[colorMode]}
+            >
+              Jawara Lobster is a company profile website that is engaged in
+              lobster food. I created this website using{" "}
+              <Code>CMS Wordpress</Code> version <Badge>5.8.2</Badge>.
+            </FeaturedProjectCard>
+
+            <FeaturedProjectCard
+              title="Sahabat Indah Logistik"
+              href="https://sahabatindahlogistik.com/"
+              src="/images/featuredproject/sahabatindahlogistik.png"
+              alt="Image of sahabat indah logistik"
+              color={iconColor[colorMode]}
+            >
+              Sahabat Indah Logistik is a company profile website that is
+              engaged in land, air, and sea courier services. I created this
+              website using <Code>CMS Wordpress</Code> version{" "}
+              <Badge>5.8.2</Badge>.
+            </FeaturedProjectCard>
+
+            <FeaturedProjectCard
+              title="Flowx Valve"
+              href="https://flowx.co.id/"
+              src="/images/featuredproject/flowx.png"
+              alt="Image of flowx"
+              color={iconColor[colorMode]}
+            >
+              Flowx Valve is a company profile website that is engaged in water
+              machine. I created this website using <Code>CMS Wordpress</Code>{" "}
+              version <Badge>5.8.2</Badge>.
+            </FeaturedProjectCard>
+
+            <FeaturedProjectCard
+              title="Withdraw"
+              href="https://withdraw.co.id/"
+              src="/images/featuredproject/withdraw.png"
+              alt="Image of withdraw"
+              color={iconColor[colorMode]}
+            >
+              Withdraw is a group of freelancers including myself. Withdraws are
+              just getting started and growing. So whatever is in it has not
+              completely really worked very well. Website Withdraw is built with
+              <Code>Laravel</Code> framework version <Badge>8.12</Badge>.
             </FeaturedProjectCard>
           </Flex>
         </Stack>
