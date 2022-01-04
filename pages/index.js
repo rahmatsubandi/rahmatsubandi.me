@@ -187,6 +187,22 @@ export default function Index() {
               Experience
             </Heading>
             <ExperienceBox
+              name="PT Lima Sekawan Indonesia"
+              years="2021 - 2021"
+              pos="Full Stack Web Developer"
+              badge_1="Full-time"
+            >
+              At Hivefive I use the <Code>PHP</Code> programming language or{" "}
+              <Code>CMS Wordpress</Code> for such fast needs both internally and
+              externally. Not only that, I also maintain 3 VPS at once, the
+              first is HiveFive's VPS, the second is the client's VPS which
+              accommodates 30 websites, and the third is the VPS client which
+              accommodates 25 websites. VPS1 and VPS2 have clients that continue
+              to grow, my estimate is that one VPS can accommodate 50 websites.
+              And I also create client websites such as company profiles,
+              e-commerce, or other custom websites.
+            </ExperienceBox>
+            <ExperienceBox
               name="PT Bintang Inovasi Teknologi"
               years="2020 - Present"
               pos="Software Engineering Specialist"
