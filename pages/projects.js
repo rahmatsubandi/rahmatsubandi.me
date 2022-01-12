@@ -254,7 +254,7 @@ const Projects = () => {
 
             <FeaturedProjectCard
               title="Lara Stater"
-              href="https://larastater-soon.netlify.app/"
+              href="https://larastater.netlify.app/"
               src="/images/featuredproject/larastater.png"
               alt="Image of lara stater"
               color={iconColor[colorMode]}
