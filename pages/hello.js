@@ -8,7 +8,7 @@ import {
     Text
 } from '@chakra-ui/react'
 import useSWR from 'swr'
-import fetcher from '../lib/fetcher'
+import fetcher from '../scripts/fetcher'
 
 import SocialLink from '../components/SocialLink'
 import Container from '../components/Container'

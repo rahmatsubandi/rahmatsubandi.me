@@ -11,7 +11,6 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-
 import Container from "../components/Container";
 import ViewCounter from "../components/ViewCounter";
 import LikeCounter from "../components/LikeCounter";
@@ -24,7 +23,7 @@ export default function BlogLayout({ children, frontMatter }) {
     dark: "gray.400",
   };
   const router = useRouter();
-  const slug = router.asPath.replace("/blog", "");
+  const slug = router.asPath.replace('/blog', '')
 
   const [width, setWidth] = useState(1);
   const handleScroll = () => {
@@ -45,21 +44,9 @@ export default function BlogLayout({ children, frontMatter }) {
 
   return (
     <>
-      <Box
-        h={1}
-        as="div"
-        bgGradient="linear(to-r, red.100, orange.200, yellow.300, green.400, teal.500, blue.600, cyan.700, purple.800, pink.900)"
-        position="sticky"
-        transition="all 200ms linear"
-        top={0}
-        zIndex={100}
-        w={`${width}%`}
-      ></Box>
+      <Box h={1} as="div" bgGradient="linear(to-r, red.100, orange.200, yellow.300, green.400, teal.500, blue.600, cyan.700, purple.800, pink.900)" position="sticky" transition="width .5s ease-in-out" top={0} zIndex={100} w={`${width}%`}></Box>
       <Container>
-        <BlogSeo
-          url={`https://rahmatsubandi.me/blog${slug}`}
-          {...frontMatter}
-        />
+        <BlogSeo url={`https://rahmatsubandi.me/blog${slug}`} {...frontMatter} />
         <Stack
           as="article"
           spacing={8}
@@ -109,9 +96,7 @@ export default function BlogLayout({ children, frontMatter }) {
                 <LikeCounter id={slug} />
               </Text>
             </Flex>
-            {frontMatter.Image != "" ? (
-              <Image src={frontMatter.image} alt={frontMatter.alt} />
-            ) : null}
+            {frontMatter.Image != "" ? ( <Image src={frontMatter.image} alt={frontMatter.alt} borderRadius={3} /> ) : null}
           </Flex>
           {children}
         </Stack>

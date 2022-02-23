@@ -1,6 +1,6 @@
 const title = 'Rahmat Subandi – Developer, writer, creator.'
 const description =
-    'Personal portfolio and resume website for Rahmat Subandi, a student, developer, writer, and creator attending CCSU in Connecticut.'
+    'Personal portfolio and resume website for Rahmat Subandi, a student, developer, writer, and creator of this website.'
 
 const SEO = {
     title,

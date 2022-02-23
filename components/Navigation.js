@@ -3,6 +3,7 @@ import { useColorMode, Button, Flex, Box, Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 import DarkModeSwitch from "../components/DarkModeSwitch";
 
@@ -17,11 +18,6 @@ const StickyNav = styled(Flex)`
 const Navigation = () => {
   const { colorMode } = useColorMode();
   const router = useRouter();
-
-  // const bgColor = {
-  //   light: "#fff",
-  //   dark: "#15161a",
-  // };
 
   const navHoverBg = {
     light: "gray.100",
@@ -38,80 +34,77 @@ const Navigation = () => {
       flexDirection="row"
       justifyContent="space-between"
       alignItems="center"
-      maxWidth="800px"
+      // maxWidth="800px"
       minWidth="356px"
       width="100%"
-      // bg={bgColor[colorMode]}
       as="nav"
       px={6}
       py={6}
-      mt={8}
       mb={[null, 0, 8]}
       mx="auto"
       display={["none", "flex", "flex"]}
     >
-      <Box>
-        <NextLink href="/" passHref>
-          <Button
-            as="a"
-            variant="ghost"
-            p={[1, 2, 4]}
-            mr={2}
-            _hover={{ backgroundColor: navHoverBg[colorMode] }}
-            // backgroundColor={
-            //   router.pathname === "/" ? navHoverBg[colorMode] : null
-            // }
-            aria-label="Home"
-          >
-            <Text
-              color={router.pathname === "/" ? colorActive[colorMode] : null}
-            >
-              Home
-            </Text>
-          </Button>
-        </NextLink>
-        <NextLink href="/blog" passHref>
-          <Button
-            as="a"
-            variant="ghost"
-            p={[1, 2, 4]}
-            mr={2}
-            _hover={{ backgroundColor: navHoverBg[colorMode] }}
-            // backgroundColor={
-            //   router.pathname.includes("/blog") ? navHoverBg[colorMode] : null
-            // }
-            aria-label="Blog"
-          >
-            <Text
-              color={
-                router.pathname === "/blog" ? colorActive[colorMode] : null
-              }
-            >
-              Blog
-            </Text>
-          </Button>
-        </NextLink>
-        <NextLink href="/projects" passHref>
-          <Button
-            as="a"
-            variant="ghost"
-            p={[1, 2, 4]}
-            _hover={{ backgroundColor: navHoverBg[colorMode] }}
-            // backgroundColor={
-            //   router.pathname === "/projects" ? navHoverBg[colorMode] : null
-            // }
-            aria-label="Projects"
-          >
-            <Text
-              color={
-                router.pathname === "/projects" ? colorActive[colorMode] : null
-              }
-            >
-              Projects
-            </Text>
-          </Button>
-        </NextLink>
-      </Box>
+      <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7 }}
+      >
+          <Box maxWidth="1200px">
+            <NextLink href="/" passHref>
+              <Button
+                as="a"
+                variant="ghost"
+                p={[1, 2, 4]}
+                mr={2}
+                _hover={{ backgroundColor: navHoverBg[colorMode] }}
+                aria-label="Home"
+              >
+                <Text
+                  color={router.pathname === "/" ? colorActive[colorMode] : null}
+                >
+                  Home
+                </Text>
+              </Button>
+            </NextLink>
+            <NextLink href="/blog" passHref>
+              <Button
+                as="a"
+                variant="ghost"
+                p={[1, 2, 4]}
+                mr={2}
+                _hover={{ backgroundColor: navHoverBg[colorMode] }}
+                aria-label="Blog"
+              >
+                <Text
+                  color={
+                    router.pathname === "/blog" ? colorActive[colorMode] : null
+                  }
+                >
+                  Blog
+                </Text>
+              </Button>
+            </NextLink>
+            <NextLink href="/projects" passHref>
+              <Button
+                as="a"
+                variant="ghost"
+                p={[1, 2, 4]}
+                _hover={{ backgroundColor: navHoverBg[colorMode] }}
+                aria-label="Projects"
+              >
+                <Text
+                  color={
+                    router.pathname === "/projects"
+                      ? colorActive[colorMode]
+                      : null
+                  }
+                >
+                  Projects
+                </Text>
+              </Button>
+            </NextLink>
+          </Box>
+      </motion.div>
       <DarkModeSwitch />
     </StickyNav>
   );

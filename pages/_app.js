@@ -6,8 +6,7 @@ import { DefaultSeo } from 'next-seo'
 import { prismLightTheme, prismDarkTheme } from '../styles/prism'
 import MDXComponents from '../components/MDXComponents'
 import SEO from '../next-seo.config'
-import { ChakraProvider } from '@chakra-ui/react'
-import { Chakra } from "../src/Chakra"
+import { Chakra } from "../scripts/chakra"
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode()
@@ -22,12 +21,10 @@ const GlobalStyle = ({ children }) => {
             scroll-behavior: smooth;
           }
           ::selection {
-            // jika darkmode warna merah jika lightmode hijau
             background: ${colorMode === 'light' ? '#2F855A' : '#68D391'};
             color: white;
           }
           ::-moz-selection {
-            // jika darkmode warna merah jika lightmode hijau
             background: ${colorMode === 'light' ? '#2F855A' : '#68D391'};
             color: white;
           }
@@ -50,7 +47,7 @@ function MyApp({ Component, pageProps }) {
     <Chakra cookies={pageProps.cookies}>
       <ColorModeProvider
         options={{
-          useSystemColorMode: true,
+          useSystemColorMode: true, // use system color mode by default
         }}
       >
         <MDXProvider components={MDXComponents}>

@@ -8,7 +8,6 @@ try {
             privateKey: firebasePrivateKey.replace(/\\n/g, '\n'),
             project_id: process.env.FIREBASE_PROJECT_ID
         }),
-        // databaseURL: 'https://personal-website-8b7b8.firebaseio.com'
         databaseURL: 'https://personal-website-27cbc-default-rtdb.firebaseio.com'
     })
 } catch (error) {

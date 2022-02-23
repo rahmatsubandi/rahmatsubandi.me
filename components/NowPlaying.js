@@ -9,7 +9,7 @@ import {
   Image,
   Box,
 } from "@chakra-ui/react";
-import fetcher from "../lib/fetcher";
+import fetcher from "../scripts/fetcher";
 import { SiSpotify } from "react-icons/si";
 
 export default function NowPlaying() {
