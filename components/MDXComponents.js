@@ -25,12 +25,12 @@ const CustomLink = (props) => {
     if (isInternalLink) {
         return (
             <NextLink href={href} passHref>
-                <Link color={color[colorMode]} {...props}></Link>
+                <Link color={color[colorMode]} {...props} />
             </NextLink>
         )
     }
 
-    return <Link color={color[colorMode]} isExternal {...props}></Link>
+    return <Link color={color[colorMode]} isExternal {...props} />
 }
 
 const Quote = (props) => {

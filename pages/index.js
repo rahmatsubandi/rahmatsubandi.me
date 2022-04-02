@@ -86,7 +86,7 @@ export default function Index() {
           <motion.div
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: .7, delay: .4 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
           >
             <Flex
               flexDirection="column"
@@ -193,10 +193,25 @@ export default function Index() {
                 Experience
               </Heading>
               <ExperienceBox
-                name="PT Lima Sekawan Indonesia"
-                years="2021 - 2021"
-                pos="Full Stack Web Developer"
+                name="Indonesia Crypto Network"
+                years="2022 - Present"
+                pos="Web Developer"
                 badge_1="Full-time"
+              >
+                As a Web Developer who implements from Design to website
+                interface, makes the necessary tools for implementation into
+                websites, creates databases, and is fully responsible for
+                creating dynamic websites so as to make it easier for the
+                author/writer team. Some websites that I have worked on:
+                <br />1. <Link href="https://coinfest.asia/" isExternal color={linkColor[colorMode]} target="_blank">Coinfest Asia 2022</Link>
+                <br />2. <Link href="https://coinvestasi.com/" isExternal color={linkColor[colorMode]} target="_blank">Coinvestasi (On Going)</Link>
+              </ExperienceBox>
+
+              <ExperienceBox
+                name="PT Lima Sekawan Indonesia"
+                years="2021"
+                pos="Full Stack Web Developer"
+                badge_1="Contract"
               >
                 At Hivefive I use the <Code>PHP</Code> programming language or{" "}
                 <Code>CMS Wordpress</Code> for such fast needs both internally
@@ -208,6 +223,7 @@ export default function Index() {
                 websites. And I also create client websites such as company
                 profiles, e-commerce, or other custom websites.
               </ExperienceBox>
+
               <ExperienceBox
                 name="PT Bintang Inovasi Teknologi"
                 years="2020 - Present"
@@ -222,6 +238,7 @@ export default function Index() {
                 and more than 6 months part time or freelance work both in
                 office and remote.
               </ExperienceBox>
+
               <ExperienceBox
                 name="BNPB (Badan Nasional Penanggulangan Bencana)"
                 years="2020 - 2021"

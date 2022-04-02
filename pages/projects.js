@@ -342,6 +342,21 @@ const Projects = () => {
               completely really worked very well. Website Withdraw is built with
               <Code>Laravel</Code> framework version <Badge>8.12</Badge>.
             </FeaturedProjectCard>
+
+            <FeaturedProjectCard
+              title="TBB"
+              href="https://tbbagus.store/"
+              src="/images/featuredproject/tbb.png"
+              alt="Image of tbb"
+              color={iconColor[colorMode]}
+            >
+              TBB is an e-commerce application that implements an a priori
+              algorithm. This project was made personally by me for the needs of
+              the final project / thesis. This application is built using the
+              PHP programming language using the <Code>Laravel</Code>{" "}
+              <Badge>7</Badge> framework and <Code>MySQL</Code>
+              database.
+            </FeaturedProjectCard>
           </Flex>
         </Stack>
       </Container>
