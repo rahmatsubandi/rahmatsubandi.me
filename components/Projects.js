@@ -28,7 +28,7 @@ const Projects = () => {
       <FeaturedProjectCard
         title="TBB"
         href="https://tbbagus.store/"
-        src="/images/featuredproject/tbb.png"
+        src="https://ik.imagekit.io/rhmtin/featuredproject/tbb_RjhJRo9c6.png"
         alt="Image of tbb"
         color={iconColor[colorMode]}
       >
@@ -42,7 +42,7 @@ const Projects = () => {
       <FeaturedProjectCard
         title="Survei Mandiri - ANRI"
         href="https://survei.anri.go.id/"
-        src="/images/featuredproject/anri.png"
+        src="https://ik.imagekit.io/rhmtin/featuredproject/anri_3W1aE9aUn.png"
         alt="Image of survei anri"
         color={iconColor[colorMode]}
       >
@@ -55,7 +55,7 @@ const Projects = () => {
       <FeaturedProjectCard
         title="JDIH"
         href="https://web.bnpb.go.id/jdih/"
-        src="/images/featuredproject/bnpb.png"
+        src="https://ik.imagekit.io/rhmtin/featuredproject/bnpb_IAMqy_-9Q.png"
         alt="Image of jdih"
         color={iconColor[colorMode]}
       >

@@ -107,7 +107,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Lazadi"
               href="https://lazadi.000webhostapp.com/"
-              src="/images/featuredproject/lazadi.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/lazadi__gO3pkZ-K.png"
               alt="Image of lazadi"
               color={iconColor[colorMode]}
             >
@@ -120,7 +120,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="2Cok"
               href="https://2cok.netlify.app/"
-              src="/images/featuredproject/2cok.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/2cok_iZWcX-ylm.png"
               alt="Image of 2cok"
               color={iconColor[colorMode]}
             >
@@ -132,7 +132,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="TOCBTPRO"
               href="https://tocbtpro.com/"
-              src="/images/featuredproject/tocbtpro.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/tocbtpro_AcMGFrH-g.png"
               alt="Image of tocbtpro"
               color={iconColor[colorMode]}
             >
@@ -145,7 +145,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="JTS Derek"
               href="https://jtsderek.id/"
-              src="/images/featuredproject/jts.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/jts_H6-RoAp9J.png"
               alt="Image of jts"
               color={iconColor[colorMode]}
             >
@@ -159,7 +159,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Survei Mandiri - ANRI"
               href="https://survei.anri.go.id/"
-              src="/images/featuredproject/anri.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/anri_3W1aE9aUn.png"
               alt="Image of survei anri"
               color={iconColor[colorMode]}
             >
@@ -173,7 +173,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="PHPBUILDER"
               href="https://web.bnpb.go.id/phpbuilder/"
-              src="/images/featuredproject/bnpb.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/bnpb_IAMqy_-9Q.png"
               alt="Image of phpbuilder"
               color={iconColor[colorMode]}
             >
@@ -186,7 +186,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="RB"
               href="https://web.bnpb.go.id/rb/"
-              src="/images/featuredproject/bnpb.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/bnpb_IAMqy_-9Q.png"
               alt="Image of rb"
               color={iconColor[colorMode]}
             >
@@ -200,7 +200,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="JDIH"
               href="https://web.bnpb.go.id/jdih/"
-              src="/images/featuredproject/bnpb.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/bnpb_IAMqy_-9Q.png"
               alt="Image of jdih"
               color={iconColor[colorMode]}
             >
@@ -214,7 +214,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="PPID"
               href="https://web.bnpb.go.id/ppid/"
-              src="/images/featuredproject/bnpb.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/bnpb_IAMqy_-9Q.png"
               alt="Image of ppid"
               color={iconColor[colorMode]}
             >
@@ -228,7 +228,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="KPR Prima"
               href="https://komisipenjualankavling.com/"
-              src="/images/featuredproject/kpr.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/kpr_k2tOmKYt5.png"
               alt="Image of kprprima"
               color={iconColor[colorMode]}
             >
@@ -241,7 +241,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Sopel Teteh"
               href="#"
-              src="/images/featuredproject/sopel.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/sopel_WHU9vLD_V.png"
               alt="Image of sopel teteh"
               color={iconColor[colorMode]}
             >
@@ -255,7 +255,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Lara Stater"
               href="https://larastater.netlify.app/"
-              src="/images/featuredproject/larastater.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/larastater_XpmRpTW9b.png"
               alt="Image of lara stater"
               color={iconColor[colorMode]}
             >
@@ -272,7 +272,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Karta Bhumi Nusanntara"
               href="https://karta-bhumi.co.id/"
-              src="/images/featuredproject/kartabhumi.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/kartabhumi_VuPNk1W7Q.png"
               alt="Image of karta bhumi nusantara"
               color={iconColor[colorMode]}
             >
@@ -284,7 +284,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Sinar Lentera Energi"
               href="https://sinarlenteraenergi.com/"
-              src="/images/featuredproject/sinarlenteraenergi.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/sinarlenteraenergi_Mvb4Gnz56.png"
               alt="Image of sinar lentera energi"
               color={iconColor[colorMode]}
             >
@@ -296,7 +296,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Jawara Lobster"
               href="https://jawaralobster.co.id/"
-              src="/images/featuredproject/jawaralobster.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/jawaralobster_a5igcLRyQ.png"
               alt="Image of jawara lobster"
               color={iconColor[colorMode]}
             >
@@ -308,7 +308,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Sahabat Indah Logistik"
               href="https://sahabatindahlogistik.com/"
-              src="/images/featuredproject/sahabatindahlogistik.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/sahabatindahlogistik_wpqo_g125.png"
               alt="Image of sahabat indah logistik"
               color={iconColor[colorMode]}
             >
@@ -321,7 +321,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Flowx Valve"
               href="https://flowx.co.id/"
-              src="/images/featuredproject/flowx.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/flowx_qo3q5Wjih.png"
               alt="Image of flowx"
               color={iconColor[colorMode]}
             >
@@ -333,7 +333,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Withdraw"
               href="https://withdraw.co.id/"
-              src="/images/featuredproject/withdraw.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/withdraw_WQvuY44AF.png"
               alt="Image of withdraw"
               color={iconColor[colorMode]}
             >
@@ -346,7 +346,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="TBB"
               href="https://tbbagus.store/"
-              src="/images/featuredproject/tbb.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/tbb_RjhJRo9c6.png"
               alt="Image of tbb"
               color={iconColor[colorMode]}
             >
@@ -361,7 +361,7 @@ const Projects = () => {
             <FeaturedProjectCard
               title="Coinfest Asia"
               href="https://coinfest.asia/"
-              src="/images/featuredproject/coinfest.png"
+              src="https://ik.imagekit.io/rhmtin/featuredproject/coinfest_Fsz8pCHaY.png"
               alt="Image of coinfest asia"
               color={iconColor[colorMode]}
             >

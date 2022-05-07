@@ -5,9 +5,11 @@
 /.pnp
 .pnp.js
 
+# root
 .env
 other
 personal-website-27cbc-firebase-adminsdk-8t2sv-01ca0dace3.json
+/public/images/*.zip
 
 # testing
 /coverage
