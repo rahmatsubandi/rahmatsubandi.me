@@ -5,7 +5,7 @@ export default async () => {
 
     try {
         firebase.initializeApp({
-            databaseURL: 'https://personal-website-27cbc-default-rtdb.firebaseio.com'
+            databaseURL: 'https://personal-website-27cbc-default-rtdb.firebaseio.com/'
         })
     } catch (error) {
         /*

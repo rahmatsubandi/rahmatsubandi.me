@@ -83,13 +83,13 @@ export default function BlogLayout({ children, frontMatter }) {
                             <Flex align="center">
                                 <Avatar
                                     size="sm"
-                                    name="Rahamat Subandi"
-                                    src="../images/profile.jpg"
+                                    name="Rahmat Subandi"
+                                    src="../images/profile.png"
                                     mr={2}
                                 />
                                 <Text fontSize="sm" color={textColor[colorMode]}>
                                     {frontMatter.by}
-                                    {'Rahamat Subandi / '}
+                                    {'Rahmat Subandi / '}
                                     {format(parseISO(frontMatter.publishedAt), 'dd MMMM, yyyy')}
                                 </Text>
                             </Flex>

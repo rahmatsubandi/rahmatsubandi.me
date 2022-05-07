@@ -26,7 +26,7 @@ import {
 
 const url = 'https://rahmatsubandi.me/hello'
 const titleSEO = 'Hello – Rahmat Subandi'
-const description = 'I’m a developer, writer, creator, and student. Use the links below to learn more.'
+const description = 'I’m a developer, writer, and tech enthusiast. Use the links below to learn more.'
 
 const Hello = () => {
 
@@ -72,7 +72,7 @@ const Hello = () => {
                         <Heading letterSpacing="tight" mb={4} as="h1" size="xl" alignSelf="center">
                             Hello 👋, I'm Rahmat Subandi
                         </Heading>
-                        <Text alignSelf="center" maxWidth="450px" textAlign="center" mb={4}>You can call me Rahmat, i'm a developer, writer, creator, and student. Use the links below to learn more.</Text>
+                        <Text alignSelf="center" maxWidth="450px" textAlign="center" mb={4}>You can call me Rahmat, i'm a developer, writer, and tech enthusiast. Use the links below to learn more.</Text>
                         <SocialLink name="Visit to my website!" href="/" icon={CodeIcon} />
                         <SocialLink name="Connect with me on Linkedin" href="https://www.linkedin.com/in/rahmat-subandi-7238391b4/" icon={FaLinkedin} />
                         <SocialLink name="View my repository in GitHub" href="https://github.com/rahmatsubandi?tab=repositories" icon={FaGithub} />

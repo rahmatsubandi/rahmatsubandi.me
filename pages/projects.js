@@ -204,7 +204,7 @@ const Projects = () => {
               alt="Image of jdih"
               color={iconColor[colorMode]}
             >
-              This Jaringan Dokumentasi dan Informasi Hukum (JDIH) is my project
+              This Jaringan Dokumentasi and Informasi Hukum (JDIH) is my project
               in a BNPB agency/government agency. This is my third project
               during my internship at BNPB. Built with the <Code>PHP</Code>{" "}
               programming language and using the framework{" "}
@@ -218,7 +218,7 @@ const Projects = () => {
               alt="Image of ppid"
               color={iconColor[colorMode]}
             >
-              This Pejabat Pengelola Informasi Dan Dokumentasi (PPID) is my
+              This Pejabat Pengelola Informasi and Dokumentasi (PPID) is my
               project in a BNPB agency/government agency. This is my fourth
               project during my internship at BNPB. Built with the{" "}
               <Code>PHP</Code> programming language and using the framework{" "}
@@ -356,6 +356,22 @@ const Projects = () => {
               PHP programming language using the <Code>Laravel</Code>{" "}
               <Badge>7</Badge> framework and <Code>MySQL</Code>
               database.
+            </FeaturedProjectCard>
+
+            <FeaturedProjectCard
+              title="Coinfest Asia"
+              href="https://coinfest.asia/"
+              src="/images/featuredproject/coinfest.png"
+              alt="Image of coinfest asia"
+              color={iconColor[colorMode]}
+            >
+              Coinfest Asia is the biggest event in Asia. This event organizes
+              or contains about existing Blockchain technology. This event will
+              be held in August 2022. This website is built with{" "}
+              <Code>WordPress</Code> version <Badge>5.9</Badge> with minimal/or
+              limited use of <Code>plugins</Code>, and the theme used is purely
+              my loving handiwork by me and 1 more team. The front-end used in
+              this theme is <Code>Tailwind CSS</Code> version <Badge>3</Badge>.
             </FeaturedProjectCard>
           </Flex>
         </Stack>

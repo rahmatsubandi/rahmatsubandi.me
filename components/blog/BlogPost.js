@@ -5,18 +5,18 @@ import fetcher from '../../scripts/fetcher'
 import useSWR from 'swr'
 import * as formatNum from 'comma-number'
 
-const BlogPost = ({ title, summary, slug }) => {
+const BlogPost = ({ title, summary, href }) => {
     const { colorMode } = useColorMode()
     const secondaryTextColor = {
         light: 'gray.700',
         dark: 'gray.400'
     }
 
-    const { data } = useSWR(`/api/page-views?id=${slug}`, fetcher)
+    const { data } = useSWR(`/api/page-views?id=${href}`, fetcher)
     const views = data?.total
 
     return (
-        <NextLink href={`blog/${slug}`} passHref>
+        <NextLink href={`blog/${href}`} passHref>
             <Link w="100%" _hover={{ textDecoration: 'none' }}>
                 <Box mb={10} display="block" width="100%">
                     <Flex

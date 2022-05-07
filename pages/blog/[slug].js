@@ -8,18 +8,6 @@ import { blogPostsFilePaths, BLOG_POSTS_PATH } from '../../scripts/mdx'
 import MDXComponents from '../../components/MDXComponents'
 import mdxPrism from 'mdx-prism'
 import readingTime from 'reading-time'
-import {
-    Text,
-    Link,
-    Flex,
-    useColorMode,
-    Avatar,
-    Button,
-    Badge,
-    Divider,
-    useToast,
-    Heading,
-} from '@chakra-ui/react'
 import { motion } from "framer-motion"
 
 export default function BlogPost({ source, frontMatter }) {
