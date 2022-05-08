@@ -64,7 +64,7 @@ const Hello = () => {
                         <Avatar
                             size='2xl'
                             name="Rahmat Subandi"
-                            src="../images/profile.png"
+                            src="../images/profile.jpg"
                             mr={2}
                             alignSelf="center"
                             my={5}
