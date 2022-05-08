@@ -10,13 +10,12 @@ export default class MyDocument extends NextDocument {
             <Html lang="en">
                 <GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" />
                 <Head>
+                    {/* Google Search */}
+                    <meta name="google-site-verification" content="-k-5hoYyinYKhKZRIONUWgmMtDpU9nUTLrTdwfnjg8Y" />
                     {/* Google Adsense */}
                     <script data-ad-client="pub-4006595161413084" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
-                    <script
-                        async
-                        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-                    />
+                    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `
