@@ -1,9 +1,0 @@
-
-Serve images in next-gen formats (Fix IMG)
- - All image in the page home
- - All image in the page projects
- - All image in the page blog
- - Add height and width to all image
-
-Defer offscreen images (Fix IMG)
- - Define all height and width of image
