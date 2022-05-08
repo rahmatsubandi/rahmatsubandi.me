@@ -97,7 +97,7 @@ export default function Hero() {
                     >
                         <AspectRatio ratio={16 / 9}>
                             {/* <iframe src="https://www.youtube.com/embed/uNKBWrkMO_Q" alt="Featured YouTube video" allowFullScreen={true} style={{ borderRadius: 10 }} /> */}
-                            <Image alt={'Banner'} objectFit={'cover'} src={'https://ik.imagekit.io/rhmtin/profile_8ElxTYUZI.png'} style={{ borderRadius: 10 }} />
+                            <Image alt={'Hero'} objectFit={'cover'} src={'../images/hero.png'} style={{ borderRadius: 10 }} />
                         </AspectRatio>
                     </motion.div>
                 </Box>

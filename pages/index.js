@@ -128,14 +128,14 @@ export default function Index() {
               <Box as="section" mt={10}>
                 <Heading letterSpacing="tight" mt={8} mb={4} size="lg" fontWeight={700} as="h2">Latest Blog Post</Heading>
                 <BlogPost
+                  title="Git Cheat Sheet"
+                  summary="This cheat sheet features the most important and commonly used Git commands for easy reference."
+                  href={`git-cheat-sheet`}
+                />
+                <BlogPost
                   title="Speed up programming language writing with emmet"
                   summary="Emmet functions to speed up writing our programming languages, such as Java Script, PHP, and many more, even HTML and CSS can too."
                   href={`emmet-syntax`}
-                />
-                <BlogPost
-                  title="MySQL CLI Cheatsheet"
-                  summary="Cheatsheet MySql CLI command"
-                  href={`mysql-cheetsheet`}
                 />
               </Box>
               <Divider mb={10} mt={20} w="90%" alignSelf="center" />

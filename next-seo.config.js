@@ -13,7 +13,7 @@ const SEO = {
         description,
         images: [
             {
-                url: 'https://rahmatsubandi.me/images/logo.png',
+                url: 'https://rahmatsubandi.me/images/profile.png',
                 alt: title
             }
         ]

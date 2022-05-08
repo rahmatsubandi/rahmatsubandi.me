@@ -19,7 +19,7 @@ import { motion } from "framer-motion"
 
 const url = 'https://rahmatsubandi.me/blog'
 const title = 'Blog – Rahmat Subandi'
-const description = 'Personal blog for Rahmat Subandi. I write about computer science, web development, and more.'
+const description = 'Personal blog Rahmat Subandi. I write about computer science, web development, and more.'
 
 export default function Blog({ posts }) {
     const [searchValue, setSearchValue] = useState('')

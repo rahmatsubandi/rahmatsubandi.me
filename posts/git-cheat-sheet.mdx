@@ -1,0 +1,231 @@
+---
+title: "Git Cheat Sheet"
+publishedAt: "2022-05-08"
+summary: "This cheat sheet features the most important and commonly used Git commands for easy reference."
+image: "/images/blog/git-cheat-sheet/banner.png"
+---
+
+# Introduction
+
+Git is the free and open source distributed version control system that's responsible for everything GitHub related that happens locally on your computer. This cheat sheet features the most important and commonly used Git commands for easy reference.
+
+## What is a Distributed Version Control System?
+
+A distributed version control system is a system that helps you keep track of changes you've made to files in your project.
+This change history lives on your local machine and lets you revert to a previous version of your project with ease in case something goes wrong.
+Git makes collaboration easy. Everyone on the team can keep a full backup of the repositories they're working on on their local machine. Then, thanks to an external server like BitBucket, GitHub or GitLab, they can safely store the repository in a single place.
+This way, different members of the team can copy it locally and everyone has a clear overview of all changes made by the whole team.
+Git has many different commands you can use. And I've found that these fifty are the ones I use the most often (and are therefore the most helpful to remember).
+
+## INSTALLATION & GUIS
+
+With platform specific installers for Git, BitBucket, GitHub or GitLab also provides the ease of staying up-to-date with the latest releases of the command line tool while providing a graphical user interface for day-to-day interaction, review, and repository synchronization
+
+## Git for All Platforms
+
+- [Git SCM](http://git-scm.com)
+
+### Related tutorials
+
+- [Git Cheat Sheet 📄 (50 commands + PDF and poster)](https://dev.to/doabledanny/git-cheat-sheet-50-commands-free-pdf-and-poster-4gcn)
+- [Git Cheat Sheet – 50 Git Commands You Should Know)](https://www.freecodecamp.org/news/git-cheat-sheet/)
+
+### How to check your Git configuration:
+
+```bash:bash
+# The command below returns a list of information about your git configuration including user name and email
+git config -l
+```
+
+### Setup
+
+Configuring user information used across all local repositories
+
+```bash:bash
+# set a name that is identifiable for credit when review version history
+git config --global user.name "[firstname lastname]"
+
+# set an email address that will be associated with each history marker
+git config --global user.email "[valid-email]"
+
+# (Optional) set automatic command line coloring for Git for easy reviewing
+git config --global color.ui auto
+```
+
+### Setup & Init
+
+Configuring user information, initializing and cloning repositories
+
+```bash:bash
+# initialize an existing directory as a Git repository
+git init
+
+# retrieve an entire repository from a hosted location via URL
+git clone [url]
+```
+
+### Stage & Snapshot
+
+Working with snapshots and the Git staging area
+
+```bash:bash
+# show modified files in working directory, staged for your next commit
+git status
+
+# add a file as it looks now to your next commit (stage)
+git add [file]
+
+# unstage a file while retaining the changes in working directory
+git reset [file]
+
+# diff of what is changed but not staged
+git diff
+
+# diff of what is staged but not yet committed
+git diff --staged
+
+# commit your staged content as a new commit snapshot
+git commit -m "[descriptive message]"
+```
+
+### Branch & Merge
+
+Isolating work in branches, changing context, and integrating changes
+
+```bash:bash
+# list your branches. a * will appear next to the currently active branch
+git branch
+
+# create a new branch at the current commit
+git branch [branch-name]
+
+# switch to another branch and check it out into your working directory
+git checkout
+
+# merge the specified branch’s history into the current one
+git merge [branch]
+
+# show all commits in the current branch's history
+git log
+```
+
+### Inspect & Compare
+
+Examining logs, diffs and object information
+
+```bash:bash
+# show the commit history for the currently active branch
+git log
+
+# show the commits on branchA that are not on branchB
+git log branchB..branchA
+
+# show the commits that changed file, even across renames
+git log --follow [file]
+
+# show the diff of what is in branchA that is not in branchB
+git diff branchB...branchA
+
+# show any object in Git in human-readable format
+git show [SHA]
+```
+
+### Tracking Path Changes
+
+Versioning file removes and path changes
+
+```bash:bash
+# delete the file from project and stage the removal for commit
+git rm [file]
+
+# change an existing file path and stage the move
+git mv [existing-path] [new-path]
+
+# show all commit logs with indication of any paths that moved
+git log --stat -M
+```
+
+### Ignoring Patterns
+
+Preventing unintentional staging or commiting of files
+
+```bash:bash
+# Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.
+logs/
+*.notes
+pattern*/
+
+# system wide ignore pattern for all local repositories
+git config --global core.excludesfile [file]
+```
+
+### Share & Update
+
+Retrieving updates from another repository and updating local repos
+
+```bash:bash
+# add a git URL as an alias
+git remote add [alias] [url]
+
+# fetch down all the branches from that Git remote
+git fetch [alias]
+
+# merge a remote branch into your current branch to bring it up to date
+git merge [alias]/[branch]
+
+# Transmit local branch commits to the remote repository branch
+git push [alias] [branch]
+
+# fetch and merge any commits from the tracking remote branch
+git pull
+```
+
+### Rewrite History
+
+Rewriting branches, updating commits and clearing history
+
+```bash:bash
+# apply any commits of current branch ahead of specified one
+git rebase [branch]
+
+# clear staging area, rewrite working tree from specified commit
+git reset --hard [commit]
+```
+
+### Temporary Commits
+
+Temporarily store modified, tracked files in order to change branches
+
+```bash:bash
+# Save modified and staged changes
+git stash
+
+# list stack-order of stashed file changes
+git stash list
+
+# write working from top of stash stack
+git stash pop
+
+# discard the changes from top of stash stack
+git stash drop
+```
+
+## Conclusion
+
+These commands can dramatically improve your productivity in Git. You don't have to remember them all – that's why I have written this cheat sheet. Bookmark this page for future reference or print it if you like.
+
+### Bonus
+
+One-page Git Commands cheat seet by Danny Adams
+
+![ One-page Git Commands](/images/blog/git-cheat-sheet/git-poster.png)
+
+## Thanks for reading
+
+Hope this cheat sheet is useful!
+
+# References
+
+[Education Github](https://education.github.com)
+
+#### And what next?

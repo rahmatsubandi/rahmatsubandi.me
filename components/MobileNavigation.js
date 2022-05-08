@@ -2,6 +2,7 @@ import React from 'react'
 import {
     useColorMode,
     Button,
+    Text,
     Flex
 } from '@chakra-ui/react'
 import styled from '@emotion/styled'
@@ -30,6 +31,11 @@ const MobileNavigation = () => {
         dark: 'gray.600',
     }
 
+    const color = {
+        light: 'black',
+        dark: 'white'
+    }
+
     return (
         <StickyNav
             flexDirection="row"
@@ -39,6 +45,7 @@ const MobileNavigation = () => {
             minWidth="320px"
             width="100%"
             bg={navBgColor[colorMode]}
+            color={color[colorMode]}
             as="nav"
             px={6}
             py={2}
@@ -49,17 +56,17 @@ const MobileNavigation = () => {
             <NextLink href="/" passHref>
                 <Button as="a" variant="ghost" p={[5, 2, 4]} backgroundColor={router.pathname === '/' ? navActiveBg[colorMode] : null}>
                     Home
-                    </Button>
+                </Button>
             </NextLink>
             <NextLink href="/blog" passHref>
                 <Button as="a" variant="ghost" p={[5, 2, 4]} backgroundColor={router.pathname.includes('/blog') ? navActiveBg[colorMode] : null}>
                     Blog
-                    </Button>
+                </Button>
             </NextLink>
             <NextLink href="/projects" passHref>
                 <Button as="a" variant="ghost" p={[5, 2, 4]} backgroundColor={router.pathname === '/projects' ? navActiveBg[colorMode] : null}>
                     Projects
-                    </Button>
+                </Button>
             </NextLink>
         </StickyNav >
     )

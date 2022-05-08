@@ -29,6 +29,11 @@ const Navigation = () => {
     dark: "green.300",
   };
 
+  const color = {
+    light: 'black',
+    dark: 'white'
+}
+
   return (
     <StickyNav
       flexDirection="row"
@@ -59,9 +64,7 @@ const Navigation = () => {
                 _hover={{ backgroundColor: navHoverBg[colorMode] }}
                 aria-label="Home"
               >
-                <Text
-                  color={router.pathname === "/" ? colorActive[colorMode] : null}
-                >
+                <Text color={router.pathname === "/" ? colorActive[colorMode] : color[colorMode]}>
                   Home
                 </Text>
               </Button>
@@ -75,11 +78,7 @@ const Navigation = () => {
                 _hover={{ backgroundColor: navHoverBg[colorMode] }}
                 aria-label="Blog"
               >
-                <Text
-                  color={
-                    router.pathname === "/blog" ? colorActive[colorMode] : null
-                  }
-                >
+                <Text color={router.pathname === "/blog" ? colorActive[colorMode] : color[colorMode]}>
                   Blog
                 </Text>
               </Button>
@@ -93,12 +92,7 @@ const Navigation = () => {
                 aria-label="Projects"
               >
                 <Text
-                  color={
-                    router.pathname === "/projects"
-                      ? colorActive[colorMode]
-                      : null
-                  }
-                >
+                  color={router.pathname === "/projects" ? colorActive[colorMode] : color[colorMode]}>
                   Projects
                 </Text>
               </Button>
