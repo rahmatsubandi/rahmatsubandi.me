@@ -32,7 +32,7 @@ const LanguageSwitch = () => {
     >
       {locales.map((e) => (
         <option key={e} value={e}>
-          {e}
+          {e === defaultLocale ? "EN" : "ID"}
         </option>
       ))}
     </Select>
