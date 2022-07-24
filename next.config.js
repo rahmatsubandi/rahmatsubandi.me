@@ -1,10 +1,12 @@
-module.exports = {
+const nextTranslate = require("next-translate");
+
+module.exports = nextTranslate({
     webpack: (config, { isServer }) => {
         if (isServer) {
             require('./scripts/generate-sitemap');
         }
 
-        return config
+        return config;
     },
     async headers() {
         return [
@@ -19,4 +21,4 @@ module.exports = {
             }
         ]
     }
-}
+});

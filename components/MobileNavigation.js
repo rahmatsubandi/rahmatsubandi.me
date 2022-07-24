@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-    useColorMode,
-    Button,
-    Text,
-    Flex
-} from '@chakra-ui/react'
+import { useColorMode, Button, Flex } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
@@ -52,6 +47,7 @@ const MobileNavigation = () => {
             mt={0}
             mx="auto"
             display={['flex', 'none', 'none']}
+            transitionDuration="500ms"
         >
             <NextLink href="/" passHref>
                 <Button as="a" variant="ghost" p={[5, 2, 4]} backgroundColor={router.pathname === '/' ? navActiveBg[colorMode] : null}>
@@ -68,7 +64,7 @@ const MobileNavigation = () => {
                     Projects
                 </Button>
             </NextLink>
-        </StickyNav >
+        </StickyNav>
     )
 }
 

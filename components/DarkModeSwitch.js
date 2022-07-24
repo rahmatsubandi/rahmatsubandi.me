@@ -7,6 +7,7 @@ const DarkModeSwitch = () => {
     light: 'black',
     dark: 'white'
   }
+
   return (
     <IconButton
       variant="ghost"
@@ -14,6 +15,7 @@ const DarkModeSwitch = () => {
       icon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
       onClick={toggleColorMode}
       color={iconColor[colorMode]}
+      mr={2}
     />
   )
 }

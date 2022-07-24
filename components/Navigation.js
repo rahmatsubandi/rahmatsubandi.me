@@ -6,6 +6,8 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
 import DarkModeSwitch from "../components/DarkModeSwitch";
+import LanguageSwitch from "../components/LanguageSwitch";
+import useTranslation from "next-translate/useTranslation";
 
 const StickyNav = styled(Flex)`
   position: sticky;
@@ -17,6 +19,7 @@ const StickyNav = styled(Flex)`
 
 const Navigation = () => {
   const { colorMode } = useColorMode();
+  const { t } = useTranslation();
   const router = useRouter();
 
   const navHoverBg = {
@@ -30,9 +33,9 @@ const Navigation = () => {
   };
 
   const color = {
-    light: 'black',
-    dark: 'white'
-}
+    light: "black",
+    dark: "white",
+  };
 
   return (
     <StickyNav
@@ -48,58 +51,84 @@ const Navigation = () => {
       mb={[null, 0, 8]}
       mx="auto"
       display={["none", "flex", "flex"]}
+      transitionDuration="500ms"
     >
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
-          <Box maxWidth="1200px">
-            <NextLink href="/" passHref>
-              <Button
-                as="a"
-                variant="ghost"
-                p={[1, 2, 4]}
-                mr={2}
-                _hover={{ backgroundColor: navHoverBg[colorMode] }}
-                aria-label="Home"
+        <Box maxWidth="1200px">
+          <NextLink href="/" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              p={[1, 2, 4]}
+              mr={2}
+              _hover={{ backgroundColor: navHoverBg[colorMode] }}
+              aria-label="Home"
+            >
+              <Text
+                color={
+                  router.pathname === "/"
+                    ? colorActive[colorMode]
+                    : color[colorMode]
+                }
               >
-                <Text color={router.pathname === "/" ? colorActive[colorMode] : color[colorMode]}>
-                  Home
-                </Text>
-              </Button>
-            </NextLink>
-            <NextLink href="/blog" passHref>
-              <Button
-                as="a"
-                variant="ghost"
-                p={[1, 2, 4]}
-                mr={2}
-                _hover={{ backgroundColor: navHoverBg[colorMode] }}
-                aria-label="Blog"
+                {t("header:home")}
+              </Text>
+            </Button>
+          </NextLink>
+          <NextLink href="/blog" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              p={[1, 2, 4]}
+              mr={2}
+              _hover={{ backgroundColor: navHoverBg[colorMode] }}
+              aria-label="Blog"
+            >
+              <Text
+                color={
+                  router.pathname === "/blog"
+                    ? colorActive[colorMode]
+                    : color[colorMode]
+                }
               >
-                <Text color={router.pathname === "/blog" ? colorActive[colorMode] : color[colorMode]}>
-                  Blog
-                </Text>
-              </Button>
-            </NextLink>
-            <NextLink href="/projects" passHref>
-              <Button
-                as="a"
-                variant="ghost"
-                p={[1, 2, 4]}
-                _hover={{ backgroundColor: navHoverBg[colorMode] }}
-                aria-label="Projects"
+                {t("header:blog")}
+              </Text>
+            </Button>
+          </NextLink>
+          <NextLink href="/projects" passHref>
+            <Button
+              as="a"
+              variant="ghost"
+              p={[1, 2, 4]}
+              _hover={{ backgroundColor: navHoverBg[colorMode] }}
+              aria-label="Projects"
+            >
+              <Text
+                color={
+                  router.pathname === "/projects"
+                    ? colorActive[colorMode]
+                    : color[colorMode]
+                }
               >
-                <Text
-                  color={router.pathname === "/projects" ? colorActive[colorMode] : color[colorMode]}>
-                  Projects
-                </Text>
-              </Button>
-            </NextLink>
-          </Box>
+                {t("header:projects")}
+              </Text>
+            </Button>
+          </NextLink>
+        </Box>
       </motion.div>
-      <DarkModeSwitch />
+      <Box
+        display={["none", "flex", "flex"]}
+        flexDirection="row"
+        justifyContent="space-between"
+        alignItems="center"
+      >
+        <DarkModeSwitch />
+        <LanguageSwitch />
+      </Box>
     </StickyNav>
   );
 };

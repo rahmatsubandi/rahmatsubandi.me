@@ -51,7 +51,7 @@ export default function BlogLayout({ children, frontMatter }) {
         <>
       <Box h={1} as="div" bgGradient="linear(to-r, red.100, orange.200, yellow.300, green.400, teal.500, blue.600, cyan.700, purple.800, pink.900)" position="sticky" transition="width .5s ease-in-out" top={0} zIndex={100} w={`${width}%`}></Box>
       <Container>
-                <BlogSeo url={`https://rahmatsubandi.me/blog${slug}`} {...frontMatter} />
+                <BlogSeo url={`https://www.rahmatsubandi.dev/blog${slug}`} {...frontMatter} />
                 <Stack
                     as="article"
                     spacing={8}

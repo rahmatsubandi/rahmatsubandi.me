@@ -4,7 +4,7 @@
 
 ## Overview
 
-My personal portfolio website hosted at [https://rahmatsubandi.me](https://rahmatsubandi.me). My personal website has changed over the years - from a static HTML/CSS/JS site to native PHP to CodeIgnither to Laravel and finally to Next. js/React. This site has my writings, projects, tutorials, experiences, and more.
+My personal portfolio website hosted at [https://www.rahmatsubandi.dev](https://www.rahmatsubandi.dev). My personal website has changed over the years - from a static HTML/CSS/JS site to native PHP to CodeIgnither to Laravel and finally to Next. js/React. This site has my writings, projects, tutorials, experiences, and more.
 
 Feel free to fork this repo and make it into your own website! Below you will find instructions, features, and the tech stack.
 

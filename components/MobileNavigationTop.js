@@ -8,6 +8,7 @@ import styled from '@emotion/styled'
 import { useRouter } from 'next/router'
 
 import DarkModeSwitch from '../components/DarkModeSwitch'
+import LanguageSwitch from '../components/LanguageSwitch'
 
 const StickyNav = styled(Flex)`
   position: sticky;
@@ -72,13 +73,18 @@ const MobileNavigationTop = () => {
             mx="auto"
             display={['flex', 'none', 'none']}
             backgroundColor={navBgColor[colorMode]}
+            transitionDuration="500ms"
         >
             <Text
                 visibility={visibility}
                 color={color[colorMode]}
             >{router.pathname === '/' ? 'Home' : router.pathname.slice(1, 2).toUpperCase()}{router.pathname.slice(2).split('/')[0]}</Text>
-            <DarkModeSwitch />
-        </StickyNav >
+            {/* buat dark mode dan lang siwtch sejajar */}
+            <Flex flexDirection="row" justifyContent="space-between" alignItems="center">
+                <DarkModeSwitch />
+                <LanguageSwitch />
+            </Flex>
+        </StickyNav>
     )
 }
 

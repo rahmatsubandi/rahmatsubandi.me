@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rahmatsubandi.me/blog</loc>
+    <loc>https://www.rahmatsubandi.dev/blog</loc>
   </url>
 
   <url>
-    <loc>https://rahmatsubandi.me/hello</loc>
+    <loc>https://www.rahmatsubandi.dev/hello</loc>
   </url>
 
   <url>
-    <loc>https://rahmatsubandi.me</loc>
+    <loc>https://www.rahmatsubandi.dev</loc>
   </url>
 
   <url>
-    <loc>https://rahmatsubandi.me/projects</loc>
+    <loc>https://www.rahmatsubandi.dev/projects</loc>
   </url>
 </urlset>

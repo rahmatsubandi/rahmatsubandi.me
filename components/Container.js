@@ -31,6 +31,7 @@ const Container = ({ children }) => {
         bg={bgColor[colorMode]}
         color={color[colorMode]}
         px={[0, 4, 4]}
+        transitionDuration="500ms"
       >
         {router.pathname == '/' && <Hero />}
         <Flex px={4} flexDir="column" minH="90vh">

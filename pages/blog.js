@@ -1,38 +1,30 @@
-import React, { useState } from 'react'
-import { NextSeo } from 'next-seo'
-import {
-    Heading,
-    Flex,
-    Stack,
-    Input,
-    InputGroup,
-    InputRightElement,
-} from '@chakra-ui/react'
-import fs from 'fs'
-import matter from 'gray-matter'
-import path from 'path'
-import { blogPostsFilePaths, BLOG_POSTS_PATH } from '../scripts/mdx'
-import Container from '../components/Container'
-import BlogPost from '../components/blog/BlogPost'
-import { SearchIcon } from '@chakra-ui/icons'
-import { motion } from "framer-motion"
+import React, { useState } from 'react';
+import { NextSeo } from 'next-seo';
+import { Heading, Flex, Stack, Input, InputGroup, InputRightElement } from '@chakra-ui/react';
+import fs from 'fs';
+import matter from 'gray-matter';
+import path from 'path';
+import { blogPostsFilePaths, BLOG_POSTS_PATH } from '../scripts/mdx';
+import Container from '../components/Container';
+import BlogPost from '../components/blog/BlogPost';
+import { SearchIcon } from '@chakra-ui/icons';
+import { motion } from 'framer-motion';
 
-const url = 'https://rahmatsubandi.me/blog'
-const title = 'Blog – Rahmat Subandi'
-const description = 'Personal blog Rahmat Subandi. I write about computer science, web development, and more.'
+const url = 'https:/www.rahmatsubandi.dev/blog';
+const title = 'Blog – Rahmat Subandi';
+const description =
+    'Personal blog Rahmat Subandi. I write about computer science, web development, and more.';
 
 export default function Blog({ posts }) {
-    const [searchValue, setSearchValue] = useState('')
+    const [searchValue, setSearchValue] = useState('');
 
     const filteredBlogPosts = posts
-        .sort(
-            (a, b) =>
-                Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
-        )
-        .filter((frontMatter) =>
-            frontMatter.data?.title?.toLowerCase()?.includes(searchValue.toLowerCase()) ||
-            frontMatter.data?.summary?.toLowerCase()?.includes(searchValue.toLowerCase())
-        )
+        .sort((a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt)))
+        .filter(
+            (frontMatter) =>
+                frontMatter.data?.title?.toLowerCase()?.includes(searchValue.toLowerCase()) ||
+                frontMatter.data?.summary?.toLowerCase()?.includes(searchValue.toLowerCase())
+        );
 
     return (
         <>
@@ -43,7 +35,7 @@ export default function Blog({ posts }) {
                 openGraph={{
                     url,
                     title,
-                    description
+                    description,
                 }}
             />
             <Container>
@@ -66,7 +58,7 @@ export default function Blog({ posts }) {
                         <motion.div
                             initial={{ y: -20, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: .7, delay: .4 }}
+                            transition={{ duration: 0.7, delay: 0.4 }}
                         >
                             <Heading letterSpacing="tight" as="h1" size="2xl" my={4}>
                                 Blog ({posts.length} posts)
@@ -94,20 +86,20 @@ export default function Blog({ posts }) {
                 </Stack>
             </Container>
         </>
-    )
+    );
 }
 
 export function getStaticProps() {
     const posts = blogPostsFilePaths.map((filePath) => {
-        const source = fs.readFileSync(path.join(BLOG_POSTS_PATH, filePath))
-        const { content, data } = matter(source)
+        const source = fs.readFileSync(path.join(BLOG_POSTS_PATH, filePath));
+        const { content, data } = matter(source);
 
         return {
             content,
             data,
             filePath,
-        }
-    })
+        };
+    });
 
-    return { props: { posts } }
+    return { props: { posts } };
 }

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://rahmatsubandi.me/sitemap.xml
+Sitemap: https://www.rahmatsubandi.dev/sitemap.xml

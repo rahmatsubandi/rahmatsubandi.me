@@ -53,14 +53,14 @@ const Projects = () => {
         framework <Code>Yii2</Code>.
       </FeaturedProjectCard>
       <FeaturedProjectCard
-        title="JDIH"
-        href="https://web.bnpb.go.id/jdih/"
+        title="PPID"
+        href="https://web.bnpb.go.id/ppid/"
         src="/images/featuredproject/bnpb.png"
-        alt="Image of jdih"
+        alt="Image of ppid"
         color={iconColor[colorMode]}
       >
-        This Jaringan Dokumentasi dan Informasi Hukum (JDIH) is my project in a
-        BNPB agency/government agency. This is my third project during my
+        This Pejabat Pengelola Informasi and Dokumentasi (PPID) is my project in
+        a BNPB agency/government agency. This is my fourth project during my
         internship at BNPB. Built with the <Code>PHP</Code> programming language
         and using the framework <Code>Codeigniter 3</Code>.
       </FeaturedProjectCard>
