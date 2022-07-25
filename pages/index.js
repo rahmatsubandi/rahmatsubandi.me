@@ -114,7 +114,7 @@ export default function Index() {
                                     as="h2"
                                     mb={4}
                                 >
-                                    About Me
+                                    Tentang saya
                                 </Heading>
                                 <Text color={colorSecondary[colorMode]}>
                                     I study at
